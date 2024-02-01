@@ -1,0 +1,358 @@
+/*tablet*/
+
+@media only screen and (min-width: 768px) {
+
+    /*Header*/
+    header {
+        .nav-bar {
+            .container-imagen {
+                .navbar-brand {
+                    img {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    /*contacto*/
+    .main-contacto {
+        .seccion-principal {
+            .formulario {
+                .gaps {
+                    .datos-personales {
+                        font-size: large;
+                        margin-left: 10%;
+
+                        .nombre-apellido {
+                            .input {
+                                width: 45%;
+                            }
+                        }
+
+                        .correo-electronico {
+                            .input {
+                                width: 45%;
+                            }
+                        }
+                    }
+
+                    .opciones {
+                        margin-top: 5%;
+                        margin-left: 5%;
+
+                        p {
+                            margin-left: 10%;
+                        }
+
+                        .opciones-desplegable {
+                            display: flex;
+                            width: 30%;
+                        }
+                    }
+
+                    .comentarios {
+                        margin: 5% 25%;
+                        margin-left: 25%;
+                    }
+
+                    .checkbox {
+                        margin: 5% 25%;
+                        margin-left: 25%;
+                    }
+
+                    .boton-enviar {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*deskopt*/
+
+@media only screen and (min-width: 1024px) {
+
+    /*Header*/
+    header {
+        .nav-bar {
+            .container-imagen {
+                width: 30%;
+
+                .navbar-brand {
+                    img {
+                        width: 55%;
+                    }
+                }
+            }
+
+            .button {
+
+                .menu-style {
+
+                    position: relative;
+                    top: inherit;
+                    right: inherit;
+                    background-color: inherit;
+
+                }
+            }
+
+        }
+    }
+
+
+    /*Main index*/
+
+    .main-index {
+        .bienvenidos {
+            margin: 5%;
+
+            .bienvenidos-img {
+                .index-img {
+                    margin-top: 10px;
+                    width: 80%;
+                    border-radius: 10%;
+                    margin-left: 10%;
+                }
+            }
+        }
+
+        .premezcla {
+            .container-main-index {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(6, auto);
+                margin: 5%;
+
+                .imagen-intro-index {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 3;
+
+                    img {
+                        margin-left: 15%;
+                    }
+                }
+
+
+                .introduccion {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 3;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    list-style-position: inside;
+                }
+
+
+
+                .imagen-introduccion {
+                    grid-column: 2 / 3;
+                    grid-row: 3 / 5;
+
+
+                    img {
+                        width: 70%;
+                        border-radius: 10%;
+                        margin: 10% 13%;
+                    }
+                }
+
+                .introduccion-receta {
+                    grid-column: 1 / 2;
+                    grid-row: 3 / 4;
+                    margin: 5% 10%;
+                }
+
+                .ingredientes-premezcla {
+                    grid-column: 1 / 2;
+                    grid-row: 4 / 5;
+                    margin: 5%;
+                    //    .ingredientes {}
+                }
+
+                .final-premezcla {
+                    grid-column: 1 / 3;
+                    grid-row: 5 / 6;
+                    margin: 5%;
+                }
+            }
+        }
+    }
+
+    /*Main recetas dulces*/
+    .main-recetas-dulces {
+        .imagen-dulce-general {
+            .imagen-dulce-portada {
+                img {
+                    width: 50%;
+                    margin: 5% 25%;
+                }
+            }
+        }
+
+        .container-modales {
+            display: flex;
+            display: inline-flex;
+            width: 100%;
+
+            .modal-box {
+                width: 50%;
+
+                .imagen-modal-portada {
+                    img {
+                        width: 50%;
+                        margin: 5% 25%;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Main recetas saladas*/
+    .main-recetas-saladas {
+        .imagen-salado-general {
+            .imagen-salado-portada {
+                img {
+                    width: 50%;
+                    margin: 5% 25%;
+                }
+            }
+        }
+
+        .container-modales {
+            display: flex;
+            display: inline-flex;
+            width: 100%;
+
+            .modal-box {
+                width: 50%;
+
+                .imagen-modal-portada {
+                    img {
+                        width: 50%;
+                        margin: 5% 25%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*Main tienda*/
+    .main-tiendas {
+        .imagen-tienda-general {
+            .tienda {
+                img {
+                    width: 30%;
+                    margin: 5% 37%;
+                }
+            }
+        }
+
+
+        .container-modales {
+            display: flex;
+            display: inline-flex;
+            width: 100%;
+
+            .modal-box {
+                width: 50%;
+
+                .imagen-modal-portada {
+                    img {
+                        width: 50%;
+                        margin: 5% 25%;
+                    }
+
+                    .texto-1 {
+                        left: 25%;
+                        width: 50%;
+
+                        p {
+                            font-weight: 4rem;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    /*Main Contacto*/
+    .main-contacto {
+        .seccion-principal {
+            .formulario {
+                .gaps {
+                    .datos-personales {
+                        margin-left: 10%;
+                        font-size: large;
+
+                        .nombre-apellido {
+                            margin-left: 20%;
+                            display: flex;
+
+                            .input {
+                                width: 42%;
+                                margin-left: 5%;
+                            }
+                        }
+
+                        .correo-electronico {
+                            margin-left: 20%;
+                            display: flex;
+
+                            .input {
+                                width: 42%;
+                                margin-left: 5%;
+                            }
+                        }
+                    }
+
+                    .opciones {
+                        margin-left: 12%;
+                        display: flex;
+                        flex-direction: row;
+
+                        p {
+                            margin-top: 10px;
+                        }
+
+
+                        .opciones-desplegable {
+                            margin-left: 10px;
+                            width: 40%;
+                            height: 35px;
+                        }
+                    }
+
+                    .comentarios {
+                        margin-left: 25%;
+                        width: 50%;
+                    }
+
+                    .checkbox {
+                        margin-left: 25%;
+
+                        .input-check {
+                            margin-right: 1%;
+                        }
+
+                    }
+
+                    .boton-enviar {
+                        .enviar {
+                            width: 8%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,684 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  /*1 rem son 16 pixeles por defecto*/
+  font-weight: bold;
+  background-image: linear-gradient(to right, #d66d75, #e29587);
+}
+
+h1 {
+  font-family: 'Single Day', cursive;
+  text-align: center;
+  margin-top: 5%;
+}
+
+h2 {
+  font-family: 'Single Day', cursive;
+  text-align: center;
+  margin-top: 5%;
+}
+
+h3 {
+  font-family: 'Single Day', cursive;
+  text-align: center;
+  margin-top: 5%;
+}
+
+li {
+  list-style-position: inside;
+  font-size: medium;
+}
+
+.subtitulo {
+  text-align: justify;
+  padding: 0;
+  margin: 0;
+}
+
+/*Compartido para todas las páginas de tablet en adelante*/
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: large;
+  }
+
+  .ingredientes li {
+    font-size: large;
+  }
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container,
+.main-recetas-saladas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container,
+.main-tiendas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual,
+.main-recetas-saladas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual,
+.main-tiendas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-index .premezcla .container-main-index .imagen-intro-index img,
+.main-index .premezcla .container-main-index .imagen-introduccion img {
+  width: 60%;
+  border-radius: 10%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+header .nav-bar {
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+header .nav-bar .container-imagen .navbar-brand img {
+  width: 50%;
+}
+
+header .nav-bar .button {
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
+header .nav-bar .button .menu-style {
+  position: fixed;
+  top: 124px;
+  right: 0;
+  background-color: antiquewhite;
+}
+
+header .nav-bar .button .menu-style .navbar-nav .nav-item .nav-link {
+  margin: 0 15px;
+  font-size: 1.20em;
+}
+
+.main-index .bienvenidos .bienvenidos-img .index-img {
+  margin-top: 10px;
+  width: 80%;
+  height: 80%;
+  border-radius: 10%;
+  margin-left: 10%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-index .bienvenidos .copete-index {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.main-index .premezcla .container-main-index .imagen-intro-index img {
+  margin-left: 23%;
+}
+
+.main-index .premezcla .container-main-index .introduccion {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  list-style-position: inside;
+}
+
+.main-index .premezcla .container-main-index .imagen-introduccion img {
+  margin: 5% 13%;
+}
+
+.main-index .premezcla .container-main-index .introduccion-receta {
+  margin: 5%;
+}
+
+.main-index .premezcla .container-main-index .ingredientes-premezcla {
+  margin: 5%;
+}
+
+.main-index .premezcla .container-main-index .final-premezcla {
+  margin: 5%;
+}
+
+.main-recetas-dulces .imagen-dulce-general .imagen-dulce-portada img {
+  width: 80%;
+  margin: 10% 13%;
+  display: block;
+  border-radius: 10%;
+}
+
+.main-recetas-dulces .container-modales .modal-box .imagen-modal-portada img {
+  width: 70%;
+  margin-left: 15%;
+  display: block;
+  border-radius: 10%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana {
+  display: flex;
+  justify-content: center;
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana .modal-button {
+  margin: 5%;
+  background-color: mediumvioletred;
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content {
+  background-color: #e2b7bd;
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container {
+  margin: 10%;
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual img {
+  width: 90%;
+  margin-left: 8%;
+  display: block;
+  border-radius: 10%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual .descripcion {
+  padding: 10%;
+}
+
+.main-recetas-dulces .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual .subtitulo {
+  padding: 10%;
+}
+
+.main-recetas-saladas .imagen-salado-general .imagen-salado-portada img {
+  width: 80%;
+  margin: 10% 13%;
+  display: block;
+  border-radius: 10%;
+}
+
+.main-recetas-saladas .container-modales .modal-box .imagen-modal-portada img {
+  width: 70%;
+  margin-left: 15%;
+  display: block;
+  border-radius: 10%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-recetas-saladas .container-modales .modal-box .modal-ventana {
+  display: flex;
+  justify-content: center;
+}
+
+.main-recetas-saladas .container-modales .modal-box .modal-ventana .modal-button {
+  margin: 5%;
+  background-color: mediumvioletred;
+}
+
+.main-recetas-saladas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content {
+  background-color: #e2b7bd;
+}
+
+.main-recetas-saladas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container {
+  margin: 10%;
+}
+
+.main-recetas-saladas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual img {
+  width: 90%;
+  margin-left: 8%;
+  display: block;
+  border-radius: 10%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-recetas-saladas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual .descripcion {
+  padding: 10%;
+}
+
+.main-recetas-saladas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual .subtitulo {
+  padding: 10%;
+}
+
+.main-tiendas .imagen-tienda-general .tienda img {
+  width: 40%;
+  margin-left: 30%;
+  display: block;
+  border-radius: 10%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5%;
+}
+
+.main-tiendas .container-modales .modal-box .imagen-modal-portada {
+  position: relative;
+}
+
+.main-tiendas .container-modales .modal-box .imagen-modal-portada img {
+  width: 40%;
+  margin-left: 30%;
+  display: block;
+  border-radius: 10%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-tiendas .container-modales .modal-box .imagen-modal-portada .texto-1 {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  background-image: linear-gradient(to bottom, #b3acac, #403d3d);
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.main-tiendas .container-modales .modal-box .imagen-modal-portada .texto-1:hover {
+  opacity: 0.8;
+}
+
+.main-tiendas .container-modales .modal-box .imagen-modal-portada .texto-1 p {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.main-tiendas .container-modales .modal-box .modal-ventana {
+  display: flex;
+  justify-content: center;
+}
+
+.main-tiendas .container-modales .modal-box .modal-ventana .modal-button {
+  margin: 5%;
+  background-color: mediumvioletred;
+}
+
+.main-tiendas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content {
+  background-color: #e2b7bd;
+}
+
+.main-tiendas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container {
+  margin: 10%;
+}
+
+.main-tiendas .container-modales .modal-box .modal-ventana .cuadro-modal .dialogo-modal .modal-content .body-modal .individual-container .cuadro-individual .descripcion {
+  padding: 10%;
+}
+
+.main-contacto .seccion-principal .contacto img {
+  width: 40%;
+  border-radius: 10%;
+  margin-left: 30%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-contacto .seccion-principal .formulario {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.main-contacto .seccion-principal .formulario .gaps .datos-personales .nombre-apellido {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.main-contacto .seccion-principal .formulario .gaps .datos-personales .nombre-apellido .input {
+  width: 50%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-contacto .seccion-principal .formulario .gaps .datos-personales .correo-electronico {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.main-contacto .seccion-principal .formulario .gaps .datos-personales .correo-electronico .input {
+  width: 50%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-contacto .seccion-principal .formulario .gaps .opciones {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.main-contacto .seccion-principal .formulario .gaps .opciones .opciones-desplegable {
+  display: flex;
+  margin-left: 5%;
+  width: 40%;
+  height: 25px;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-contacto .seccion-principal .formulario .gaps .comentarios {
+  margin: 5% 20%;
+  margin-left: 20%;
+}
+
+.main-contacto .seccion-principal .formulario .gaps .comentarios .text-area {
+  width: 100%;
+  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main-contacto .seccion-principal .formulario .gaps .checkbox {
+  margin: 5% 20%;
+  margin-left: 20%;
+  display: flex;
+  width: 56%;
+}
+
+.main-contacto .seccion-principal .formulario .gaps .checkbox .input-check {
+  margin-right: 5%;
+}
+
+.main-contacto .seccion-principal .formulario .gaps .boton-enviar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.main-contacto .seccion-principal .formulario .gaps .boton-enviar .enviar {
+  background-color: mediumvioletred;
+  border-radius: 10%;
+  box-shadow: #fff;
+  width: 20%;
+}
+
+footer {
+  background-color: #e9967a;
+}
+
+footer .redes-sociales {
+  padding: 0 10%;
+}
+
+footer .derechos {
+  text-align: center;
+}
+
+/*tablet*/
+@media only screen and (min-width: 768px) {
+
+  /*Header*/
+  header .nav-bar .container-imagen .navbar-brand img {
+    width: 40%;
+  }
+
+  /*Recetas Saladas*/
+  .main-recetas-saladas .grid-container-recetas .grid-container-dos img {
+    justify-content: center;
+    margin: 0% 25%;
+    width: 50%;
+  }
+
+  /*contacto*/
+  .main-contacto .seccion-principal .formulario .gaps .datos-personales {
+    font-size: large;
+    margin-left: 10%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .datos-personales .nombre-apellido .input {
+    width: 45%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .datos-personales .correo-electronico .input {
+    width: 45%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .opciones {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .opciones p {
+    margin-left: 10%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .opciones .opciones-desplegable {
+    display: flex;
+    width: 30%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .comentarios {
+    margin: 5% 25%;
+    margin-left: 25%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .checkbox {
+    margin: 5% 25%;
+    margin-left: 25%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .boton-enviar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+}
+
+/*deskopt*/
+@media only screen and (min-width: 1024px) {
+
+  /*Header*/
+  header .nav-bar .container-imagen {
+    width: 30%;
+  }
+
+  header .nav-bar .container-imagen .navbar-brand img {
+    width: 55%;
+  }
+
+  header .nav-bar .button .menu-style {
+    position: relative;
+    top: inherit;
+    right: inherit;
+    background-color: inherit;
+  }
+
+  /*Main index*/
+  .main-index .bienvenidos {
+    margin: 5%;
+  }
+
+  .main-index .bienvenidos .bienvenidos-img .index-img {
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 10%;
+    margin-left: 10%;
+  }
+
+  .main-index .premezcla .container-main-index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    margin: 5%;
+  }
+
+  .main-index .premezcla .container-main-index .imagen-intro-index {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .main-index .premezcla .container-main-index .imagen-intro-index img {
+    margin-left: 15%;
+  }
+
+  .main-index .premezcla .container-main-index .introduccion {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin-left: 5%;
+    margin-right: 5%;
+    list-style-position: inside;
+  }
+
+  .main-index .premezcla .container-main-index .imagen-introduccion {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+  }
+
+  .main-index .premezcla .container-main-index .imagen-introduccion img {
+    width: 70%;
+    border-radius: 10%;
+    margin: 10% 13%;
+  }
+
+  .main-index .premezcla .container-main-index .introduccion-receta {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin: 5% 10%;
+  }
+
+  .main-index .premezcla .container-main-index .ingredientes-premezcla {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    margin: 5%;
+  }
+
+  .main-index .premezcla .container-main-index .final-premezcla {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    margin: 5%;
+  }
+
+  /*Main recetas dulces*/
+  .main-recetas-dulces .imagen-dulce-general .imagen-dulce-portada img {
+    width: 50%;
+    margin: 5% 25%;
+  }
+
+  .main-recetas-dulces .container-modales {
+    display: flex;
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .main-recetas-dulces .container-modales .modal-box {
+    width: 50%;
+  }
+
+  .main-recetas-dulces .container-modales .modal-box .imagen-modal-portada img {
+    width: 50%;
+    margin: 5% 25%;
+  }
+
+  /*Main recetas saladas*/
+  .main-recetas-saladas .imagen-salado-general .imagen-salado-portada img {
+    width: 50%;
+    margin: 5% 25%;
+  }
+
+  .main-recetas-saladas .container-modales {
+    display: flex;
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .main-recetas-saladas .container-modales .modal-box {
+    width: 50%;
+  }
+
+  .main-recetas-saladas .container-modales .modal-box .imagen-modal-portada img {
+    width: 50%;
+    margin: 5% 25%;
+  }
+
+  /*Main tienda*/
+  .main-tiendas .imagen-tienda-general .tienda img {
+    width: 30%;
+    margin: 5% 37%;
+  }
+
+  .main-tiendas .container-modales {
+    display: flex;
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .main-tiendas .container-modales .modal-box {
+    width: 50%;
+  }
+
+  .main-tiendas .container-modales .modal-box .imagen-modal-portada img {
+    width: 50%;
+    margin: 5% 25%;
+  }
+
+  .main-tiendas .container-modales .modal-box .imagen-modal-portada .texto-1 {
+    left: 25%;
+    width: 50%;
+  }
+
+  .main-tiendas .container-modales .modal-box .imagen-modal-portada .texto-1 p {
+    font-weight: 4rem;
+  }
+
+  /*Main Contacto*/
+  .main-contacto .seccion-principal .formulario .gaps .datos-personales {
+    margin-left: 10%;
+    font-size: large;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .datos-personales .nombre-apellido {
+    margin-left: 20%;
+    display: flex;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .datos-personales .nombre-apellido .input {
+    width: 42%;
+    margin-left: 5%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .datos-personales .correo-electronico {
+    margin-left: 20%;
+    display: flex;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .datos-personales .correo-electronico .input {
+    width: 42%;
+    margin-left: 5%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .opciones {
+    margin-left: 12%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .opciones p {
+    margin-top: 10px;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .opciones .opciones-desplegable {
+    margin-left: 10px;
+    width: 40%;
+    height: 35px;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .comentarios {
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .checkbox {
+    margin-left: 25%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .checkbox .input-check {
+    margin-right: 1%;
+  }
+
+  .main-contacto .seccion-principal .formulario .gaps .boton-enviar .enviar {
+    width: 8%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

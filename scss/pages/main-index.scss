@@ -1,0 +1,60 @@
+.main-index {
+    .bienvenidos {
+
+        .bienvenidos-img {
+            .index-img {
+                margin-top: 10px;
+                width: 80%;
+                height: 80%;
+                border-radius: 10%;
+                margin-left: 10%;
+                box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        .copete-index {
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+    }
+
+    .premezcla {
+        .container-main-index {
+            .imagen-intro-index {
+                img {
+                    @extend %imagenes-index;
+                    margin-left: 23%;
+                }
+            }
+
+            .introduccion {
+                margin-top: 5%;
+                margin-left: 5%;
+                margin-right: 5%;
+                list-style-position: inside;
+            }
+
+
+
+            .imagen-introduccion {
+                img {
+                    @extend %imagenes-index;
+                    margin: 5% 13%;
+                }
+            }
+
+            .introduccion-receta {
+                margin: 5%;
+            }
+
+            .ingredientes-premezcla {
+                margin: 5%;
+                //    .ingredientes {}
+            }
+
+            .final-premezcla {
+                margin: 5%;
+            }
+        }
+    }
+}

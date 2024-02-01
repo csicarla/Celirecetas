@@ -1,0 +1,45 @@
+header {
+    .nav-bar {
+
+        background-color: nth($list: $colores, $n: 1);
+        display: flex;
+        flex-wrap: nowrap;
+
+        .container-imagen {
+            .navbar-brand {
+                img {
+                    width: 50%;
+                }
+            }
+        }
+
+        .button {
+
+            flex-direction: row-reverse;
+            justify-content: end;
+
+            .menu-style {
+
+                position: fixed;
+                top: 124px;
+                right: 0;
+                background-color: nth($list: $colores, $n: 1);
+
+                .navbar-nav {
+
+                    .nav-item {
+
+                        .nav-link {
+
+                            margin: 0 15px;
+                            font-size: 1.20em;
+
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}

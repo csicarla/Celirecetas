@@ -1,0 +1,7 @@
+@mixin estilos-imagenes-portadas($width, $margin-left, $display-imagen, $border-radius, $sombreado) {
+    width: $width;
+    margin-left: $margin-left;
+    display: $display-imagen;
+    border-radius: $border-radius;
+    box-shadow: $sombreado;
+}

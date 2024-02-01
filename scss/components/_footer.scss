@@ -1,0 +1,11 @@
+footer {
+    background-color: nth($list: $colores, $n: 5);
+
+    .redes-sociales {
+        padding: 0 10%;
+    }
+
+    .derechos {
+        text-align: center;
+    }
+}

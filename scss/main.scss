@@ -1,0 +1,17 @@
+@import "utilities/reset";
+@import "utilities/variables";
+@import "utilities/global";
+@import "utilities/mixin";
+@import "utilities/extends";
+
+@import "components/header";
+
+@import "pages/main-index";
+@import "pages/main-recetas-dulces";
+@import "pages/main-recetas-saladas";
+@import "pages/main-tiendas";
+@import "pages/main-contacto";
+
+@import "components/footer";
+
+@import "utilities/media-queries"
