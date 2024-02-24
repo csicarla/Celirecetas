@@ -5,15 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contacto - Celirecetas</title>
+    <link rel="shortcut icon" href="../images/icono.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--SEO-->
+    <meta name="description"
+        content="La página Celirecetas es una herramienta para que los celíacos y las personas que cocinen para ellos tengan herramientas, tips y recetas ricas para deleitarse">
+    <meta name="keywords" content="celiacos, tacc, recetas, premezcla, contacto, dudas">
 
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/bc55b10aa2.js" crossorigin="anonymous"></script>
 
     <!--CSS-->
 
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css?v=1">
 
     <!-- Fonts -->
 
@@ -30,7 +36,7 @@
         <nav class="navbar navbar-expand-lg nav-bar">
             <div class="container container-imagen">
                 <a class="navbar-brand" href="../index.html">
-                    <img class="img-fluid" src="../images/logo-principal.png" alt="logo principal" width="100">
+                    <img class="img-fluid" src="../images/logo-principal.png" alt="logo principal">
                 </a>
             </div>
             <div class="container-fluid button">
@@ -64,70 +70,73 @@
 
     <main class="main-contacto">
 
-        <!--Título principal-->
-        <h1>Contacto</h1>
-        <h3>Para que nos cuentes lo que quieras</h3>
+        <!--Título principal parallax-->
+        <div class="parallax">
+            <div class="texto-parallax">
+                <h1>Contacto</h1>
+                <h2>Para que nos cuentes lo que quieras</h2>
+            </div>
+        </div>
 
-
+        <!--Imagen de portada de la página
         <section class="seccion-principal">
-
-            <!--Imagen de portada de la página-->
             <div class="contacto">
 
                 <img src="./../images/contacto.jpg" alt="contacto">
 
             </div>
+        -->
 
-            <!--Formulario-->
-            <div class="formulario">
+        <!--Formulario-->
+        <div class="formulario container">
 
-                <form class="gaps" action="formulario.php" method="POST">
+            <form class="gaps row justify-content-center mt-3 mb-3" action="formulario.php" method="POST">
 
-                    <div class="datos-personales">
-                        <div class="nombre-apellido">
-                            <!-- input name y pass-->
-                            <label for="nombre-apellido">Nombre y apellido</label>
-                            <input class="input" type="text" name="nombre-apellido" id="nombre-apellido"
-                                placeholder="Cosme Fulanito">
-                        </div>
 
-                        <div class="correo-electronico">
-                            <label for="correo-electronico">Correo electrónico</label>
-                            <input class="input" type="email" name="correo-electronico" id="correo-electronico"
-                                placeholder="cosme@gmail.com">
-                        </div>
-                    </div>
-                    <div class="opciones">
-                        <!--selección de opciones-->
-                        <p>¿Por qué nos buscaste?</p>
-                        <select class="opciones-desplegable" name="causa" id="causa">
-                            <option value="celiaco">Soy celíaco</option>
-                            <option value="pariente">Tengo un pariente celíaco</option>
-                            <option value="sensibilidad">Tengo sensibilidad al gluten no celíaca</option>
-                            <option value="cambio-de-alimentacion">Quiero cambiar mi alimentación</option>
+                <div class="form-group col-12 col-lg-8 mt-3">
+                    <!-- input name y pass-->
+                    <label for="nombre-apellido">Nombre y apellido</label>
+                    <input class="form-control" type="text" name="nombre-apellido" id="nombre-apellido"
+                        placeholder="Cosme Fulanito">
+                </div>
 
-                        </select>
-                    </div>
+                <div class="form-group col-12 col-lg-8 mt-3">
+                    <label for="correo-electronico">Correo electrónico</label>
+                    <input class="form-control" type="email" name="correo-electronico" id="correo-electronico"
+                        placeholder="cosme@gmail.com">
+                </div>
 
-                    <div class="comentarios">
-                        <!-- Text area -->
-                        <p>Comentarios</p>
-                        <textarea class="text-area" name="" id="" cols="30" rows="10">
+                <div class="form-group col-12 col-lg-8 mt-3">
+                    <!--selección de opciones-->
+                    <label>¿Por qué nos buscaste?</label>
+                    <select class="form-control" name="causa" id="causa">
+                        <option value="celiaco">Soy celíaco</option>
+                        <option value="pariente">Tengo un pariente celíaco</option>
+                        <option value="sensibilidad">Tengo sensibilidad al gluten no celíaca</option>
+                        <option value="cambio-de-alimentacion">Quiero cambiar mi alimentación</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group col-12 col-lg-8 mt-3">
+                    <!-- Text area -->
+                    <label>Comentarios</label>
+                    <textarea class="form-control" name="" id="" cols="30" rows="10">
                     </textarea>
-                    </div>
+                </div>
 
-                    <div class="checkbox">
-                        <!--input checkbox-->
-                        <input class="input-check" type="checkbox" name="" id="terminos">
-                        <label for="terminos">Acepto términos y condiciones</label>
-                    </div>
+                <div class="form-group col-12 col-lg-8 mt-3">
+                    <!--input checkbox-->
+                    <input class="form-check-input" type="checkbox" name="" id="terminos">
+                    <label class="form-check-label" for="terminos">Acepto términos y condiciones</label>
+                </div>
 
-                    <div class="boton-enviar">
-                        <!--input submit -->
-                        <input class="enviar" type="submit" value="Enviar">
-                    </div>
-                </form>
-            </div>
+                <div class="boton-enviar form-group col-12 col-lg-8 mt-3 text-center">
+                    <!--input submit -->
+                    <input class="enviar btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
 
 
         </section>

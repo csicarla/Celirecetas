@@ -5,8 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recetas Dulces - Celirecetas</title>
+    <link rel="shortcut icon" href="../images/icono.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--SEO-->
+    <meta name="description"
+        content="La página Celirecetas es una herramienta para que los celíacos y las personas que cocinen para ellos tengan herramientas, tips y recetas ricas para deleitarse">
+    <meta name="keywords" content="celiacos, tacc, recetas, premezcla, dulces, budin, muffin, magdalenas, tortas">
 
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/bc55b10aa2.js" crossorigin="anonymous"></script>
@@ -30,7 +36,7 @@
         <nav class="navbar navbar-expand-lg nav-bar">
             <div class="container container-imagen">
                 <a class="navbar-brand" href="../index.html">
-                    <img class="img-fluid" src="../images/logo-principal.png" alt="logo principal" width="100">
+                    <img class="img-fluid" src="../images/logo-principal.png" alt="logo principal">
                 </a>
             </div>
             <div class="container-fluid button">
@@ -63,98 +69,197 @@
     </header>
 
     <main class="main-recetas-dulces">
-        <!--Título principal-->
-        <h1>Recetas Dulces</h1>
-        <h3>Para los que no se empalagan...</h3>
 
-        <section class="imagen-dulce-general">
+        <!--Título principal parallax-->
+        <div class="parallax">
 
-            <!--Imagen de portada de la página-->
-            <div class="imagen-dulce-portada">
+            <div class="texto-parallax">
 
-                <img src="./../images/recetas-dulces-intro.jpeg" alt="dulces">
-
+                <h1>Recetas Dulces</h1>
+                <h2>Para los que no se empalagan...</h2>
             </div>
-        </section>
-
-        <section class="container-modales">
-
-            <!--Receta 1-->
-
-            <div class="modal-box">
-                <h2>Budín Inglés</h2>
-                <div class="imagen-modal-portada">
-                    <img src="../images/budin.jpeg" alt="budin ingles">
-                </div>
-
-                <div class="modal-ventana">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
-                        data-bs-target="#budin">
-                        Ver receta
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade cuadro-modal" id="budin" tabindex="-1" aria-labelledby="rojas"
-                        aria-hidden="true">
-                        <div class="modal-dialog dialogo-modal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="budin">Budín Inglés</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body body-modal">
-
-                                    <div class="individual-container">
+        </div>
 
 
-                                        <div class="cuadro-individual">
+        <section class="container-modales container">
 
-                                            <img src="../images/budin-ingles-modal.jpeg" alt="budin ingles">
+            <div class="row">
 
-                                            <p class="descripcion">El budín más esponjoso que vas a probar en tu vida,
-                                                ni te vas a dar cuenta que no contiene gluten.</p>
-                                            <p class="subtitulo">Ingredientes</p>
+                <!--Receta 1-->
 
-                                            <!--Ingredientes-->
-                                            <ul>
+                <div class="modal-box lg-6">
+                    <h2>Budín Inglés</h2>
+                    <div class="imagen-modal-portada">
+                        <img src="../images/budin.jpeg" alt="budin ingles">
+                    </div>
 
-                                                <li>Huevos 2</li>
-                                                <li>Azúcar tres cuartos de taza</li>
-                                                <li>Aceite neutro media taza</li>
-                                                <li>Leche media taza</li>
-                                                <li>Premezcla comercial 2 tazas</li>
-                                                <li>Esencia de Vainilla 1 cucharada</li>
-                                                <li>Polvo para Hornear 2 cucharadas</li>
+                    <div class="modal-ventana">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
+                            data-bs-target="#budin">
+                            Ver receta
+                        </button>
 
-                                            </ul>
+                        <!-- Modal -->
+                        <div class="modal fade cuadro-modal" id="budin" tabindex="-1" aria-labelledby="rojas"
+                            aria-hidden="true">
+                            <div class="modal-dialog dialogo-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="budin">Budín Inglés</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body body-modal">
 
-                                            <p class="subtitulo">Procedimiento</p>
-
-                                            <!--Procedimiento-->
-                                            <ol>
-
-                                                <li>Batir los huevos con el azúcar hasta espumar</li>
-                                                <li>Agregar el aceite y la leche y seguir batiendo</li>
-                                                <li>Unir la esencia de vainilla y cambiar batidor por espátula</li>
-                                                <li>Agregar de a poco la premezcla con el polvo de hornear e integrar
-                                                    bien</li>
-                                                <li>Hornear a 180º durante 40 minutos aproximadamente</li>
-                                                <li>Preparate unos mates y disfrutá!</li>
-
-                                            </ol>
+                                        <div class="individual-container">
 
 
+                                            <div class="cuadro-individual">
+
+                                                <img src="../images/budin-ingles-modal.jpeg" alt="budin ingles">
+
+                                                <p class="descripcion">El budín más esponjoso que vas a probar en tu
+                                                    vida,
+                                                    ni te vas a dar cuenta que no contiene gluten.</p>
+                                                <p class="subtitulo">Ingredientes</p>
+
+                                                <!--Ingredientes-->
+                                                <ul>
+
+                                                    <li>Huevos 2</li>
+                                                    <li>Azúcar tres cuartos de taza</li>
+                                                    <li>Aceite neutro media taza</li>
+                                                    <li>Leche media taza</li>
+                                                    <li>Premezcla comercial 2 tazas</li>
+                                                    <li>Esencia de Vainilla 1 cucharada</li>
+                                                    <li>Polvo para Hornear 2 cucharadas</li>
+
+                                                </ul>
+
+                                                <p class="subtitulo">Procedimiento</p>
+
+                                                <!--Procedimiento-->
+                                                <ol>
+
+                                                    <li>Batir los huevos con el azúcar hasta espumar</li>
+                                                    <li>Agregar el aceite y la leche y seguir batiendo</li>
+                                                    <li>Unir la esencia de vainilla y cambiar batidor por espátula</li>
+                                                    <li>Agregar de a poco la premezcla con el polvo de hornear e
+                                                        integrar
+                                                        bien</li>
+                                                    <li>Hornear a 180º durante 40 minutos aproximadamente</li>
+                                                    <li>Preparate unos mates y disfrutá!</li>
+
+                                                </ol>
+
+
+
+                                            </div>
 
                                         </div>
 
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
+                <!--Receta 2-->
 
+                <div class="modal-box lg-6">
+                    <h2>Pasta Frola</h2>
+                    <div class="imagen-modal-portada">
+                        <img src="../images/frola.jpeg" alt="pastafrola">
+                    </div>
+
+                    <div class="modal-ventana">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
+                            data-bs-target="#frola">
+                            Ver receta
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade cuadro-modal" id="frola" tabindex="-1" aria-labelledby="rojas"
+                            aria-hidden="true">
+                            <div class="modal-dialog dialogo-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="frola">Pasta Frola</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body body-modal">
+
+                                        <div class="individual-container">
+
+
+                                            <div class="cuadro-individual">
+
+                                                <img src="../images/frola-modal.jpeg" alt="pasta frola">
+
+                                                <p class="descripcion">La descendiente argentina de la crostata
+                                                    italiana.
+                                                </p>
+                                                <p class="subtitulo">Ingredientes</p>
+
+                                                <!--Ingredientes-->
+                                                <ul>
+
+                                                    <li>Huevos 1</li>
+                                                    <li>Azúcar 100 gr</li>
+                                                    <li>Manteca 8o gr</li>
+                                                    <li>Premezcla comercial 200 gr</li>
+                                                    <li>Esencia de Vainilla 1 cucharada</li>
+                                                    <li>Polvo para Hornear 1 cucharada</li>
+                                                    <li>Dulce de membrillo o batata 500 gr</li>
+                                                    <li>Algún licor o ron a elección</li>
+
+                                                </ul>
+
+                                                <p class="subtitulo">Procedimiento</p>
+
+                                                <!--Procedimiento-->
+                                                <ol>
+
+                                                    <li>Batir la manteca pomada con el azúcar</li>
+                                                    <li>Agregar el huevo con la escencia de vainilla</li>
+                                                    <li>Añadir la premezcla junto con el polvo de hornear</li>
+                                                    <li>Formar una masa y llevar a la heladera por una hora</li>
+                                                    <li>Cortar el dulce elegido en cubos y mezclar con un chorrito del
+                                                        licor
+                                                    </li>
+                                                    <li>Levar a microondas o al fuego hasta que se transforme en una
+                                                        crema
+                                                    </li>
+                                                    <li>Estirar la masa y colocar la mitad en un molde redondo.</li>
+                                                    <li>La mitad restante se debe cortar en tiras y reservar</li>
+                                                    <li>Agregar el dulce en la masa y colocar las tiras de masa a modo
+                                                        de
+                                                        rejilla</li>
+                                                    <li>Hornear a 180ªC hasta que la masa dore</li>
+                                                    <li>Hacete unos mates y ¡disfrutà!</li>
+
+                                                </ol>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -163,90 +268,184 @@
                 </div>
             </div>
 
-            <!--Receta 2-->
+            <!--Receta 3-->
 
-            <div class="modal-box">
-                <h2>Pasta Frola</h2>
-                <div class="imagen-modal-portada">
-                    <img src="../images/frola.jpeg" alt="pastafrola">
-                </div>
+            <div class="row">
 
-                <div class="modal-ventana">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
-                        data-bs-target="#frola">
-                        Ver receta
-                    </button>
+                <div class="modal-box lg-6">
+                    <h2>Galletitas</h2>
+                    <div class="imagen-modal-portada">
+                        <img src="../images/galletitas.jpeg" alt="galletitas">
+                    </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade cuadro-modal" id="frola" tabindex="-1" aria-labelledby="rojas"
-                        aria-hidden="true">
-                        <div class="modal-dialog dialogo-modal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="frola">Pasta Frola</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body body-modal">
+                    <div class="modal-ventana">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
+                            data-bs-target="#galletitas">
+                            Ver receta
+                        </button>
 
-                                    <div class="individual-container">
+                        <!-- Modal -->
+                        <div class="modal fade cuadro-modal" id="galletitas" tabindex="-1" aria-labelledby="rojas"
+                            aria-hidden="true">
+                            <div class="modal-dialog dialogo-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="galletitas">Galletitas</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body body-modal">
 
-
-                                        <div class="cuadro-individual">
-
-                                            <img src="../images/frola-modal.jpeg" alt="pasta frola">
-
-                                            <p class="descripcion">La descendiente argentina de la crostata italiana.
-                                            </p>
-                                            <p class="subtitulo">Ingredientes</p>
-
-                                            <!--Ingredientes-->
-                                            <ul>
-
-                                                <li>Huevos 1</li>
-                                                <li>Azúcar 100 gr</li>
-                                                <li>Manteca 8o gr</li>
-                                                <li>Premezcla comercial 200 gr</li>
-                                                <li>Esencia de Vainilla 1 cucharada</li>
-                                                <li>Polvo para Hornear 1 cucharada</li>
-                                                <li>Dulce de membrillo o batata 500 gr</li>
-                                                <li>Algún licor o ron a elección</li>
-
-                                            </ul>
-
-                                            <p class="subtitulo">Procedimiento</p>
-
-                                            <!--Procedimiento-->
-                                            <ol>
-
-                                                <li>Batir la manteca pomada con el azúcar</li>
-                                                <li>Agregar el huevo con la escencia de vainilla</li>
-                                                <li>Añadir la premezcla junto con el polvo de hornear</li>
-                                                <li>Formar una masa y llevar a la heladera por una hora</li>
-                                                <li>Cortar el dulce elegido en cubos y mezclar con un chorrito del licor
-                                                </li>
-                                                <li>Levar a microondas o al fuego hasta que se transforme en una crema
-                                                </li>
-                                                <li>Estirar la masa y colocar la mitad en un molde redondo.</li>
-                                                <li>La mitad restante se debe cortar en tiras y reservar</li>
-                                                <li>Agregar el dulce en la masa y colocar las tiras de masa a modo de
-                                                    rejilla</li>
-                                                <li>Hornear a 180ªC hasta que la masa dore</li>
-                                                <li>Hacete unos mates y ¡disfrutà!</li>
-
-                                            </ol>
+                                        <div class="individual-container">
 
 
+                                            <div class="cuadro-individual">
+
+                                                <img src="../images/galletitas-modal.avif" alt="galletitas">
+
+                                                <p class="descripcion">Galletitas crujientes y super ricas.</p>
+                                                <p class="subtitulo">Ingredientes</p>
+
+                                                <!--Ingredientes-->
+                                                <ul>
+
+                                                    <li>Huevos 1</li>
+                                                    <li>Azúcar 80gr</li>
+                                                    <li>Manteca 80 gr</li>
+                                                    <li>Premezcla comercial 200 gr</li>
+                                                    <li>Esencia de Vainilla 1 cucharada</li>
+                                                    <li>Polvo para Hornear 1 cucharada</li>
+
+                                                </ul>
+
+                                                <p class="subtitulo">Procedimiento</p>
+
+                                                <!--Procedimiento-->
+                                                <ol>
+
+                                                    <li>Batir la manteca con el azúcar hasta lograr una preparación
+                                                        cremosa
+                                                    </li>
+                                                    <li>Agregar el huevo e incorpar bien</li>
+                                                    <li>Unir la esencia de vainilla y cambiar batidor por espátula</li>
+                                                    <li>Agregar de a poco la premezcla con el polvo de hornear e
+                                                        integrar
+                                                        bien</li>
+                                                    <li>Disponer en placa enmantecada con cuchara o haciendo bolitas y
+                                                        luego
+                                                        aplastándolas</li>
+                                                    <li>Hornear a 180º durante 40 minutos aproximadamente</li>
+                                                    <li>Preparate unos mates y disfrutá!</li>
+                                                    <li>TIP: podés agregar pepitas de chocolate para más placer.</li>
+
+                                                </ol>
+
+
+
+                                            </div>
 
                                         </div>
 
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
 
+                <!--Receta 4-->
+
+                <div class="modal-box lg-6">
+                    <h2>Postre fácil de vainilla</h2>
+                    <div class="imagen-modal-portada">
+                        <img src="../images/crema-de-vainilla.jpg" alt="postre de vainilla">
+                    </div>
+
+                    <div class="modal-ventana">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
+                            data-bs-target="#vainilla">
+                            Ver receta
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade cuadro-modal" id="vainilla" tabindex="-1" aria-labelledby="rojas"
+                            aria-hidden="true">
+                            <div class="modal-dialog dialogo-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="vainilla">Crema de vainilla</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body body-modal">
+
+                                        <div class="individual-container">
+
+
+                                            <div class="cuadro-individual">
+
+                                                <img src="../images/modal-vainilla.jpeg" alt="crema de vainilla">
+
+                                                <p class="descripcion">Fácil y rico.</p>
+                                                <p class="subtitulo">Ingredientes</p>
+
+                                                <!--Ingredientes-->
+                                                <ul>
+
+                                                    <li>Huevos 2</li>
+                                                    <li>Azúcar 80gr</li>
+                                                    <li>Leche 500 ml</li>
+                                                    <li>Almidón de maíz 50 gr</li>
+                                                    <li>Esencia de Vainilla 1 cucharada</li>
+
+                                                </ul>
+
+                                                <p class="subtitulo">Procedimiento</p>
+
+                                                <!--Procedimiento-->
+                                                <ol>
+
+                                                    <li>Mezclar la leche con el azúcar y el almidón de maíz
+                                                    </li>
+                                                    <li>Llevar al fuego en una olla grande a fuego medio sin dejar de
+                                                        mezclar</li>
+                                                    <li>Cuando empiece a espesar, agregar los huevos y batir rápidamente
+                                                        por
+                                                        un minuto</li>
+                                                    <li>Fuera del fuego, agregar la esencia de vainilla</li>
+                                                    <li>Colocar en un bowl para que enfríe con un film en contacto para
+                                                        que
+                                                        no se forme esa crosta que todos odiamos</li>
+                                                    <li>A comer!</li>
+                                                    <li>TIP: Se puede preparar al microondas a máxima potencia siempre,
+                                                        calentando primero la leche con el almidón y el azúcar a
+                                                        intervalos
+                                                        de 2 minutos hasta que espece. Luego se agregan los huevos y se
+                                                        lleva al micro por un minuto más. Después, el procedimiento es
+                                                        el
+                                                        mismo.</li>
+
+                                                </ol>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -254,7 +453,6 @@
                     </div>
                 </div>
             </div>
-
 
 
         </section>

@@ -1,4 +1,29 @@
 .main-tiendas {
+    .parallax {
+        background-image: url(./../images/tienda-parallax.jpeg);
+        height: 100%;
+        @extend %parallax;
+
+        .texto-parallax {
+            @extend %texto-parallax;
+
+
+            h1 {
+                color: #000;
+                text-shadow: 2px 2px white;
+                ;
+                width: 100%;
+            }
+
+            h2 {
+                color: #000;
+                text-shadow: 2px 2px white;
+                width: 100%;
+            }
+        }
+
+    }
+
     .imagen-tienda-general {
         .tienda {
             img {

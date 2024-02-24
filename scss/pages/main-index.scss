@@ -1,6 +1,27 @@
 .main-index {
     .bienvenidos {
 
+        .parallax {
+            background-image: url(./../images/index-parallax.jpg);
+            height: 100%;
+            @extend %parallax;
+
+            .texto-parallax {
+                @extend %texto-parallax;
+    
+                h1 {
+                    color: #000;
+                    text-shadow: 2px 2px white;
+                    width: 100%;
+                }
+                h2 {
+                    color: #000;
+                    text-shadow: 2px 2px white;
+                    width: 100%;
+                }
+            }
+        }
+
         .bienvenidos-img {
             .index-img {
                 margin-top: 10px;
@@ -15,6 +36,30 @@
         .copete-index {
             margin-left: 5%;
             margin-top: 5%;
+        }
+    }
+
+    .acordeon {
+        .card-individual {
+            background-color: nth($list: $colores, $n: 4);
+            .card-header {
+                h3 {
+                    .btn {
+                    font-size: 1.5rem !important;
+                    color: black !important;
+                    text-decoration: none !important;
+                    }
+                }
+            }
+            .colapsable {
+                .cuerpo-card {
+                    .imagen-intro-index {
+                        img {
+                            @extend %imagenes-index;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -50,6 +95,13 @@
             .ingredientes-premezcla {
                 margin: 5%;
                 //    .ingredientes {}
+            }
+
+            .goma-xantica {
+                img {
+                    @extend %imagenes-index;
+                    margin: 5% 13%;
+                }
             }
 
             .final-premezcla {

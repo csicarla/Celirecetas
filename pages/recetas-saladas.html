@@ -5,8 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recetas Saladas - Celirecetas</title>
+    <link rel="shortcut icon" href="../images/icono.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--SEO-->
+    <meta name="description"
+        content="La página Celirecetas es una herramienta para que los celíacos y las personas que cocinen para ellos tengan herramientas, tips y recetas ricas para deleitarse">
+    <meta name="keywords" content="celiacos, tacc, recetas, premezcla, panes, queso, pizza">
 
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/bc55b10aa2.js" crossorigin="anonymous"></script>
@@ -30,7 +36,7 @@
         <nav class="navbar navbar-expand-lg nav-bar">
             <div class="container container-imagen">
                 <a class="navbar-brand" href="../index.html">
-                    <img class="img-fluid" src="../images/logo-principal.png" alt="logo principal" width="100">
+                    <img class="img-fluid" src="../images/logo-principal.png" alt="logo principal">
                 </a>
             </div>
             <div class="container-fluid button">
@@ -63,203 +69,394 @@
     </header>
 
     <main class="main-recetas-saladas">
-        <!--Título principal-->
-        <h1>Recetas Saladas</h1>
-        <h2></h2>
-        <h3>Para los paladares más exigentes...</h3>
 
-        <section class="imagen-salado-general">
+        <!--Título principal parallax-->
+        <div class="parallax">
+            <div class="texto-parallax">
+                <h1>Recetas Saladas</h1>
 
-            <!--Imagen de portada de la página-->
-            <div class="imagen-salado-portada">
-
-                <img src="./../images/salado-intro.jpeg" alt="panes">
-
+                <h2>Para los paladares más exigentes...</h2>
             </div>
-        </section>
+        </div>
 
-        <section class="container-modales">
+        <section class="container-modales container">
 
-            <!--Receta 1-->
+            <div class="row">
 
-            <div class="modal-box">
-                <h2>Pizza</h2>
-                <div class="imagen-modal-portada">
-                    <img src="../images/pizza.jpeg" alt="pizza">
-                </div>
+                <!--Receta 1-->
 
-                <div class="modal-ventana">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
-                        data-bs-target="#pizza">
-                        Ver receta
-                    </button>
+                <div class="modal-box col-lg-6">
+                    <h2>Pizza</h2>
+                    <div class="imagen-modal-portada">
+                        <img src="../images/pizza.jpeg" alt="pizza">
+                    </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade cuadro-modal" id="pizza" tabindex="-1" aria-labelledby="rojas"
-                        aria-hidden="true">
-                        <div class="modal-dialog dialogo-modal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="pizza">Pizza</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body body-modal">
+                    <div class="modal-ventana">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
+                            data-bs-target="#pizza">
+                            Ver receta
+                        </button>
 
-                                    <div class="individual-container">
+                        <!-- Modal -->
+                        <div class="modal fade cuadro-modal" id="pizza" tabindex="-1" aria-labelledby="rojas"
+                            aria-hidden="true">
+                            <div class="modal-dialog dialogo-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="pizza">Pizza</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body body-modal">
 
-
-                                        <div class="cuadro-individual">
-
-                                            <img src="../images/pizza-modal.jpeg" alt="pizza">
-
-                                            <p class="descripcion">La pizza más italiana del condado, con base crocante
-                                                y masa esponjosa. ¿Te la vas a perder?</p>
-                                            <p class="subtitulo">Ingredientes</p>
-
-                                            <!--Ingredientes-->
-                                            <ul>
-
-                                                <li>Huevo 1</li>
-                                                <li>Premezcla 350 gr</li>
-                                                <li>Leche en polvo 30 gr</li>
-                                                <li>Harina de Garbanzos 20 gr</li>
-                                                <li>Sal a gusto</li>
-                                                <li>Aceite dos cucharadas</li>
-                                                <li>Levadura seca 10 gramos (1 sobre)</li>
-                                                <li>Agua tibia 200 cm3 para espumar la levadura y 200 cm3 para el resto
-                                                    de la receta</li>
-                                                <li>Azúcar 1 cucharadita</li>
-
-                                            </ul>
+                                        <div class="individual-container">
 
 
-                                            <p class="subtitulo">Procedimiento</p>
+                                            <div class="cuadro-individual">
 
-                                            <!--Procedimiento-->
-                                            <ol>
+                                                <img src="../images/pizza-modal.jpeg" alt="pizza">
+
+                                                <p class="descripcion">La pizza más italiana del condado, con base
+                                                    crocante
+                                                    y masa esponjosa. ¿Te la vas a perder?</p>
+                                                <p class="subtitulo">Ingredientes</p>
+
+                                                <!--Ingredientes-->
+                                                <ul>
+
+                                                    <li>Huevo 1</li>
+                                                    <li>Premezcla 350 gr</li>
+                                                    <li>Leche en polvo 30 gr</li>
+                                                    <li>Harina de Garbanzos 20 gr</li>
+                                                    <li>Sal a gusto</li>
+                                                    <li>Aceite dos cucharadas</li>
+                                                    <li>Levadura seca 10 gramos (1 sobre)</li>
+                                                    <li>Agua tibia 200 cm3 para espumar la levadura y 200 cm3 para el
+                                                        resto
+                                                        de la receta</li>
+                                                    <li>Azúcar 1 cucharadita</li>
+
+                                                </ul>
 
 
-                                                <li>Mezclar la levadura con 200 cm3 de agua tibia y 1 cucharadita de
-                                                    azúcar. Dejar descansar por 15
-                                                    minutos. Luego de ese lapso, si espumó, la utilizamos. De lo
-                                                    contrario, se deberá tirar y
-                                                    comenzar de nuevo ya que la levadura no es apta para el consumo (se
-                                                    pudrió, básicamente)</li>
-                                                <li>Mezclar bien los secos y luego agregar la levadura espumada</li>
-                                                <li>Unir el huevo y batir bien</li>
-                                                <li>Colocar en una pizzera previamente aceitada y dejar leudar por media
-                                                    hora aproximadamente</li>
-                                                <li>Mientras, precalentar el horno a 200º y luego de la media hora,
-                                                    comenzar a hornear la pizza</li>
-                                                <li>Luego de 10 minutos, colocar la salsa de tomate y el queso, jamón o
-                                                    lo que quieras sobre la
-                                                    pizza</li>
-                                                <li>Cocinar hasta que se gratine el queso y listo, ¡buen apetito!</li>
+                                                <p class="subtitulo">Procedimiento</p>
 
-                                            </ol>
+                                                <!--Procedimiento-->
+                                                <ol>
 
 
+                                                    <li>Mezclar la levadura con 200 cm3 de agua tibia y 1 cucharadita de
+                                                        azúcar. Dejar descansar por 15
+                                                        minutos. Luego de ese lapso, si espumó, la utilizamos. De lo
+                                                        contrario, se deberá tirar y
+                                                        comenzar de nuevo ya que la levadura no es apta para el consumo
+                                                        (se
+                                                        pudrió, básicamente)</li>
+                                                    <li>Mezclar bien los secos y luego agregar la levadura espumada</li>
+                                                    <li>Unir el huevo y batir bien</li>
+                                                    <li>Colocar en una pizzera previamente aceitada y dejar leudar por
+                                                        media
+                                                        hora aproximadamente</li>
+                                                    <li>Mientras, precalentar el horno a 200º y luego de la media hora,
+                                                        comenzar a hornear la pizza</li>
+                                                    <li>Luego de 10 minutos, colocar la salsa de tomate y el queso,
+                                                        jamón o
+                                                        lo que quieras sobre la
+                                                        pizza</li>
+                                                    <li>Cocinar hasta que se gratine el queso y listo, ¡buen apetito!
+                                                    </li>
+
+                                                </ol>
+
+
+
+                                            </div>
 
                                         </div>
 
-                                    </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
 
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--Receta 2-->
+                <!--Receta 2-->
 
-            <div class="modal-box">
-                <h2>Muffin de queso</h2>
-                <div class="imagen-modal-portada">
-                    <img src="../images/muffin-queso.jpeg" alt="muffin de queso">
-                </div>
+                <div class="modal-box col-lg-6">
+                    <h2>Muffin de queso</h2>
+                    <div class="imagen-modal-portada">
+                        <img src="../images/muffin-queso.jpeg" alt="muffin de queso">
+                    </div>
 
-                <div class="modal-ventana">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
-                        data-bs-target="#muffin">
-                        Ver receta
-                    </button>
+                    <div class="modal-ventana">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
+                            data-bs-target="#muffin">
+                            Ver receta
+                        </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade cuadro-modal" id="muffin" tabindex="-1" aria-labelledby="rojas"
-                        aria-hidden="true">
-                        <div class="modal-dialog dialogo-modal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="muffin">Muffin de queso</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body body-modal">
+                        <!-- Modal -->
+                        <div class="modal fade cuadro-modal" id="muffin" tabindex="-1" aria-labelledby="rojas"
+                            aria-hidden="true">
+                            <div class="modal-dialog dialogo-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="muffin">Muffin de queso</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body body-modal">
 
-                                    <div class="individual-container">
-
-
-                                        <div class="cuadro-individual">
-
-                                            <img src="../images/muffin-queso-modal.jpeg" alt="muffin de queso">
-
-                                            <p class="descripcion">Versión salada de un clásico para picar</p>
-                                            <p class="subtitulo">Ingredientes</p>
-
-                                            <!--Ingredientes-->
-                                            <ul>
-                                                <li>Huevos 2</li>
-                                                <li>Queso rallado media taza</li>
-                                                <li>Aceite neutro un cuarto taza</li>
-                                                <li>Leche media taza</li>
-                                                <li>Premezcla comercial 2 tazas</li>
-                                                <li>Hierbas como orégano, romero o tomillo a elección</li>
-                                                <li>Polvo para Hornear 2 cucharadas</li>
-
-                                            </ul>
+                                        <div class="individual-container">
 
 
-                                            <p class="subtitulo">Procedimiento</p>
+                                            <div class="cuadro-individual">
 
-                                            <!--Procedimiento-->
-                                            <ol>
+                                                <img src="../images/muffin-queso-modal.jpeg" alt="muffin de queso">
 
-                                                <li>Batir los huevos con el queso rallado</li>
-                                                <li>Agregar el aceite y la leche y seguir batiendo</li>
-                                                <li>Si les gusta, pueden agregar las hierbas frescas o secas que quieran
-                                                </li>
-                                                <li>Agregar de a poco la premezcla con el polvo de hornear e integrar
-                                                    bien con una espátula</li>
-                                                <li>Hornear a 180º durante 40 minutos aproximadamente</li>
-                                                <li>Preparate unos mates y disfrutá!</li>
+                                                <p class="descripcion">Versión salada de un clásico para picar</p>
+                                                <p class="subtitulo">Ingredientes</p>
 
-                                            </ol>
+                                                <!--Ingredientes-->
+                                                <ul>
+                                                    <li>Huevos 2</li>
+                                                    <li>Queso rallado media taza</li>
+                                                    <li>Aceite neutro un cuarto taza</li>
+                                                    <li>Leche media taza</li>
+                                                    <li>Premezcla comercial 2 tazas</li>
+                                                    <li>Hierbas como orégano, romero o tomillo a elección</li>
+                                                    <li>Polvo para Hornear 2 cucharadas</li>
+
+                                                </ul>
 
 
+                                                <p class="subtitulo">Procedimiento</p>
+
+                                                <!--Procedimiento-->
+                                                <ol>
+
+                                                    <li>Batir los huevos con el queso rallado</li>
+                                                    <li>Agregar el aceite y la leche y seguir batiendo</li>
+                                                    <li>Si les gusta, pueden agregar las hierbas frescas o secas que
+                                                        quieran
+                                                    </li>
+                                                    <li>Agregar de a poco la premezcla con el polvo de hornear e
+                                                        integrar
+                                                        bien con una espátula</li>
+                                                    <li>Hornear a 180º durante 40 minutos aproximadamente</li>
+                                                    <li>Preparate unos mates y disfrutá!</li>
+
+                                                </ol>
+
+
+
+                                            </div>
 
                                         </div>
 
-                                    </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
 
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <!--Receta 3-->
+
+                <div class="modal-box col-lg-6">
+                    <h2>Pan</h2>
+                    <div class="imagen-modal-portada">
+                        <img src="../images/pan-casero.jpeg" alt="pan pan-casero">
+                    </div>
+
+                    <div class="modal-ventana">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
+                            data-bs-target="#pan">
+                            Ver receta
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade cuadro-modal" id="pan" tabindex="-1" aria-labelledby="rojas"
+                            aria-hidden="true">
+                            <div class="modal-dialog dialogo-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="pan">Pan</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body body-modal">
+
+                                        <div class="individual-container">
+
+
+                                            <div class="cuadro-individual">
+
+                                                <img src="../images/pan-casero-modal.jpeg" alt="pan casero">
+
+                                                <p class="descripcion">El mejor pan, húmedo y esponjoso</p>
+                                                <p class="subtitulo">Ingredientes</p>
+
+                                                <!--Ingredientes-->
+                                                <ul>
+
+                                                    <li>Huevo 1</li>
+                                                    <li>Premezcla 350 gr</li>
+                                                    <li>Leche en polvo 30 gr</li>
+                                                    <li>Harina de Garbanzos 20 gr</li>
+                                                    <li>Sal a gusto</li>
+                                                    <li>Aceite dos cucharadas</li>
+                                                    <li>Levadura seca 10 gramos (1 sobre)</li>
+                                                    <li>Agua tibia 200 cm3 para espumar la levadura y 200 cm3 para el
+                                                        resto
+                                                        de la receta</li>
+                                                    <li>Azúcar 1 cucharadita</li>
+
+                                                </ul>
+
+
+                                                <p class="subtitulo">Procedimiento</p>
+
+                                                <!--Procedimiento-->
+                                                <ol>
+
+
+                                                    <li>Mezclar la levadura con 200 cm3 de agua tibia y 1 cucharadita de
+                                                        azúcar. Dejar descansar por 15
+                                                        minutos. Luego de ese lapso, si espumó, la utilizamos. De lo
+                                                        contrario, se deberá tirar y
+                                                        comenzar de nuevo ya que la levadura no es apta para el consumo
+                                                        (se
+                                                        pudrió, básicamente)</li>
+                                                    <li>Mezclar bien los secos y luego agregar la levadura espumada</li>
+                                                    <li>Unir el huevo y batir bien</li>
+                                                    <li>Colocar en un molde de budín inglés y dejar leudar por
+                                                        media
+                                                        hora aproximadamente</li>
+                                                    <li>Mientras, precalentar el horno a 200º y luego de la media hora,
+                                                        comenzar a hornear el pan</li>
+                                                    <li>Cocinar hasta que la superficie se dore y listo, ¡buen apetito!
+                                                    </li>
+
+                                                </ol>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Receta 4-->
+
+                <div class="modal-box col-lg-6">
+                    <h2>Galletitas saladas</h2>
+                    <div class="imagen-modal-portada">
+                        <img src="../images/galletitas-saladas-caseras.jpeg" alt="galletas saladas caseras">
+                    </div>
+
+                    <div class="modal-ventana">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-lg modal-button" data-bs-toggle="modal"
+                            data-bs-target="#galletas">
+                            Ver receta
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade cuadro-modal" id="galletas" tabindex="-1" aria-labelledby="rojas"
+                            aria-hidden="true">
+                            <div class="modal-dialog dialogo-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="galletas">Pizza</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body body-modal">
+
+                                        <div class="individual-container">
+
+
+                                            <div class="cuadro-individual">
+
+                                                <img src="../images/modal-galletas-saladas.jpeg" alt="galletas saladas caseras">
+
+                                                <p class="descripcion">Galletias crocantes y súper versátiles</p>
+                                                <p class="subtitulo">Ingredientes</p>
+
+                                                <!--Ingredientes-->
+                                                <ul>
+
+                                                    <li>Huevo 1</li>
+                                                    <li>Premezcla 250 gr</li>
+                                                    <li>Manteca 100 gr</li>
+                                                    <li>Sal a gusto</li>
+                                                    <li>Especias a gusto (orégano, tomillo, queso rallado, pimentón, lo que quieras!)</li>
+
+                                                </ul>
+
+
+                                                <p class="subtitulo">Procedimiento</p>
+
+                                                <!--Procedimiento-->
+                                                <ol>
+
+
+                                                    <li>Mezclar la manteca pomada con el resto de los ingredientes hasta obetener una masa homogénea</li>
+                                                    <li>Si hace calor,  llevar a la heladera un rato, tapada con un repasador o film</li>
+                                                    <li>Estirar sobre la mesada con premezcla y cortar las galletitas a gusto</li>
+                                                    <li>Colocar en un molde previamente enmantecado</li>
+                                                    <li>Llevar a horno precalentado por aproximadamente 10 a 15 minutos</li>
+                                                    </li>
+
+                                                </ol>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </section>

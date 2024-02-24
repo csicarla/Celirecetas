@@ -20,8 +20,8 @@ header {
 
             .menu-style {
 
-                position: fixed;
-                top: 124px;
+                position: absolute;
+                top: 99%;
                 right: 0;
                 background-color: nth($list: $colores, $n: 1);
 

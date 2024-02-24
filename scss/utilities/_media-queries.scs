@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  /*1 rem son 16 pixeles por defecto*/
+  font-weight: bold;
+  background-image: linear-gradient(to right, #d66d75, #e29587); }
+
+h1 {
+  font-family: 'Single Day', cursive;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 3rem; }
+
+h2 {
+  font-family: 'Single Day', cursive;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2rem; }
+
+h3 {
+  font-family: 'Single Day', cursive;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 1.5 rem; }
+
+li {
+  list-style-position: inside;
+  font-size: medium; }
+
+.subtitulo {
+  text-align: justify;
+  padding: 0;
+  margin: 0; }
+
+/*Compartido para todas las páginas de tablet en adelante*/
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: large; }
+
+  .ingredientes li {
+    font-size: large; } }
+
+/*# sourceMappingURL=_media-queries.scs.map */

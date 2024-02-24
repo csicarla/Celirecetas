@@ -1,4 +1,25 @@
 .main-recetas-saladas {
+    .parallax {
+        background-image: url(./../images/salado-intro.jpeg);
+        @extend %parallax;
+
+        .texto-parallax {
+            @extend %texto-parallax;
+
+            h1 {
+                color: #000;
+                text-shadow: 2px 2px white;
+                width: 100%;
+            }
+
+            h2 {
+                color: #000;
+                text-shadow: 2px 2px white;
+                width: 100%;
+            }
+        }
+    }
+
     .imagen-salado-general {
         .imagen-salado-portada {
             img {
@@ -11,50 +32,52 @@
     }
 
     .container-modales {
-        .modal-box {
-            .imagen-modal-portada {
-                img {
-                    @include estilos-imagenes-portadas(70%, 15%, block, 10%, 24px 13px 26px 0px rgba(0, 0, 0, 0.8));
-                }
-            }
-
-            .modal-ventana {
-                display: flex;
-                justify-content: center;
-
-                .modal-button {
-                    margin: 5%;
-                    background-color: nth($list: $colores, $n: 3);
-
+        .row {
+            .modal-box {
+                .imagen-modal-portada {
+                    img {
+                        @include estilos-imagenes-portadas(70%, 15%, block, 10%, 24px 13px 26px 0px rgba(0, 0, 0, 0.8));
+                    }
                 }
 
-                .cuadro-modal {
-                    .dialogo-modal {
-                        .modal-content {
-                            background-color: nth($list: $colores, $n: 4);
+                .modal-ventana {
+                    display: flex;
+                    justify-content: center;
 
-                            .body-modal {
-                                .individual-container {
-                                    @extend %flex-container;
-                                    margin: 10%;
+                    .modal-button {
+                        margin: 5%;
+                        background-color: nth($list: $colores, $n: 3);
 
-                                    .cuadro-individual {
-                                        @extend %cuadro-individual;
+                    }
 
-                                        img {
-                                            @include estilos-imagenes-portadas(90%, 8%, block, 10%, 24px 13px 26px 0px rgba(0, 0, 0, 0.8));
-                                        }
+                    .cuadro-modal {
+                        .dialogo-modal {
+                            .modal-content {
+                                background-color: nth($list: $colores, $n: 4);
 
-                                        .descripcion {
-                                            padding: 10%;
-                                        }
+                                .body-modal {
+                                    .individual-container {
+                                        @extend %flex-container;
+                                        margin: 10%;
 
-                                        .subtitulo {
-                                            padding: 10%;
+                                        .cuadro-individual {
+                                            @extend %cuadro-individual;
+
+                                            img {
+                                                @include estilos-imagenes-portadas(90%, 8%, block, 10%, 24px 13px 26px 0px rgba(0, 0, 0, 0.8));
+                                            }
+
+                                            .descripcion {
+                                                padding: 10%;
+                                            }
+
+                                            .subtitulo {
+                                                padding: 10%;
+                                            }
                                         }
                                     }
-                                }
 
+                                }
                             }
                         }
                     }

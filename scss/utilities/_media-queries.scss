@@ -2,6 +2,20 @@
 
 @media only screen and (min-width: 768px) {
 
+    /*Común a todas las páginas*/
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
     /*Header*/
     header {
         .nav-bar {
@@ -15,8 +29,21 @@
         }
     }
 
+    /*index*/
 
-
+    .main-index {
+        .acordeon {
+            .card-individual {
+                .card-header {
+                    h3 {
+                        .btn {
+                            font-size: 2rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     /*contacto*/
     .main-contacto {
@@ -112,7 +139,6 @@
 
     .main-index {
         .bienvenidos {
-            margin: 5%;
 
             .bienvenidos-img {
                 .index-img {
@@ -124,62 +150,44 @@
             }
         }
 
-        .premezcla {
-            .container-main-index {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(6, auto);
-                margin: 5%;
 
-                .imagen-intro-index {
-                    grid-column: 1 / 2;
-                    grid-row: 1 / 3;
 
-                    img {
-                        margin-left: 15%;
+        .acordeon {
+            .colapsable {
+                .cuerpo-card {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(1, auto);
+
+                    .imagen-intro-index {
+                        grid-column: 1 / 2;
+                        grid-row: 1 / 2;
+                    }
+
+                    .text-center {
+                        grid-column: 2 / 3;
+                        grid-row: 1 / 2;
                     }
                 }
+            }
 
+            .card-individual {
+                .colapsable {
+                    .cuerpo card {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(1, auto);
 
-                .introduccion {
-                    grid-column: 2 / 3;
-                    grid-row: 1 / 3;
-                    margin-left: 5%;
-                    margin-right: 5%;
-                    list-style-position: inside;
-                }
+                        .imagen-intro-index {
+                            grid-column: 2 / 3;
+                            grid-row: 1 / 2;
+                        }
 
-
-
-                .imagen-introduccion {
-                    grid-column: 2 / 3;
-                    grid-row: 3 / 5;
-
-
-                    img {
-                        width: 70%;
-                        border-radius: 10%;
-                        margin: 10% 13%;
+                        .text-center {
+                            grid-column: 1 / 2;
+                            grid-row: 1 / 2;
+                        }
                     }
-                }
-
-                .introduccion-receta {
-                    grid-column: 1 / 2;
-                    grid-row: 3 / 4;
-                    margin: 5% 10%;
-                }
-
-                .ingredientes-premezcla {
-                    grid-column: 1 / 2;
-                    grid-row: 4 / 5;
-                    margin: 5%;
-                    //    .ingredientes {}
-                }
-
-                .final-premezcla {
-                    grid-column: 1 / 3;
-                    grid-row: 5 / 6;
-                    margin: 5%;
                 }
             }
         }
@@ -197,17 +205,19 @@
         }
 
         .container-modales {
-            display: flex;
-            display: inline-flex;
+            display: grid;
             width: 100%;
 
-            .modal-box {
-                width: 50%;
+            .row {
 
-                .imagen-modal-portada {
-                    img {
-                        width: 50%;
-                        margin: 5% 25%;
+                .modal-box {
+                    width: 50%;
+
+                    .imagen-modal-portada {
+                        img {
+                            width: 50%;
+                            margin: 5% 25%;
+                        }
                     }
                 }
             }
@@ -226,17 +236,16 @@
         }
 
         .container-modales {
-            display: flex;
-            display: inline-flex;
-            width: 100%;
+            .row {
 
-            .modal-box {
-                width: 50%;
+                .modal-box {
+                    width: 50%;
 
-                .imagen-modal-portada {
-                    img {
-                        width: 50%;
-                        margin: 5% 25%;
+                    .imagen-modal-portada {
+                        img {
+                            width: 50%;
+                            margin: 5% 25%;
+                        }
                     }
                 }
             }
