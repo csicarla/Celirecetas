@@ -3,6 +3,7 @@
         background-image: url(./../images/contacto-parallax.jpeg);
         height: 100%;
         @extend %parallax;
+
         .texto-parallax {
             @extend %texto-parallax;
 
@@ -11,6 +12,7 @@
                 text-shadow: 2px 2px white;
                 width: 100%;
             }
+
             h2 {
                 color: #000;
                 text-shadow: 2px 2px white;
@@ -18,23 +20,15 @@
             }
         }
     }
-    .seccion-principal {
-        .contacto {
-            img {
-                width: 40%;
-                border-radius: 10%;
-                margin-left: 30%;
-                box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8);
-            }
-        }
-        .formulario {
-            .gaps {
-                .boton-enviar {
-                    .enviar {
-                        background-color: nth($list: $colores, $n: 3);
-                    }
+
+    .formulario {
+        .gaps {
+            .boton-enviar {
+                .enviar {
+                    color: white;
+                    background-color: nth($list: $colores, $n: 3);
                 }
             }
         }
-    }    
+    }
 }

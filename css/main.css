@@ -291,12 +291,8 @@ header .nav-bar {
     color: #000;
     text-shadow: 2px 2px white;
     width: 100%; }
-.main-contacto .seccion-principal .contacto img {
-  width: 40%;
-  border-radius: 10%;
-  margin-left: 30%;
-  box-shadow: 24px 13px 26px 0px rgba(0, 0, 0, 0.8); }
-.main-contacto .seccion-principal .formulario .gaps .boton-enviar .enviar {
+.main-contacto .formulario .gaps .boton-enviar .enviar {
+  color: white;
   background-color: mediumvioletred; }
 
 footer {
@@ -306,6 +302,10 @@ footer {
   footer .derechos {
     text-align: center; }
 
+/*mobile*/
+@media only screen and (max-width: 767px) {
+  .parallax {
+    background-attachment: scroll; } }
 /*tablet*/
 @media only screen and (min-width: 768px) {
   /*Común a todas las páginas*/
@@ -380,7 +380,9 @@ footer {
       grid-row: 1 / 2; }
     .main-index .acordeon .colapsable .cuerpo-card .text-center {
       grid-column: 2 / 3;
-      grid-row: 1 / 2; }
+      grid-row: 1 / 2;
+      margin-top: 2rem;
+      margin-right: 2rem; }
   .main-index .acordeon .card-individual .colapsable .cuerpo card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
