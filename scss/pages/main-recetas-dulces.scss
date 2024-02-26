@@ -5,7 +5,8 @@
         @extend %parallax;
 
         .texto-parallax {
-            @extend %texto-parallax;;
+            @extend %texto-parallax;
+            ;
 
             h1 {
                 color: #000;

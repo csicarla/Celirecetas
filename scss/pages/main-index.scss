@@ -8,12 +8,13 @@
 
             .texto-parallax {
                 @extend %texto-parallax;
-    
+
                 h1 {
                     color: #000;
                     text-shadow: 2px 2px white;
                     width: 100%;
                 }
+
                 h2 {
                     color: #000;
                     text-shadow: 2px 2px white;
@@ -42,15 +43,17 @@
     .acordeon {
         .card-individual {
             background-color: nth($list: $colores, $n: 4);
+
             .card-header {
                 h3 {
                     .btn {
-                    font-size: 1.5rem !important;
-                    color: black !important;
-                    text-decoration: none !important;
+                        font-size: 1.5rem !important;
+                        color: black !important;
+                        text-decoration: none !important;
                     }
                 }
             }
+
             .colapsable {
                 .cuerpo-card {
                     .imagen-intro-index {
